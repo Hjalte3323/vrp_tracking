@@ -26,7 +26,6 @@ AddEventHandler('hjalte:tracker', function()
 
 	if DoesEntityExist(targetVehicle) then
 		startAnim("amb@code_human_police_investigate@idle_b","idle_f")
-		TriggerEvent('pogressBar:drawBar', 8000, 'Monterer GPS på køretøj')
 		Citizen.Wait(8000)
 		ClearPedTasks(PlayerPedId())
 		TriggerServerEvent('hjalte:takeTheItem')
